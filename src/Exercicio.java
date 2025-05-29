@@ -5,7 +5,7 @@ public class Exercicio {
     private String som;
     private int tempoMin;
     private String exemplo;
-    
+
     public Exercicio(String nome, String descricao, String som, int tempoMin, String exemplo) {
         this.nome = nome;
         this.descricao = descricao;

@@ -3,6 +3,7 @@ public class App {
         System.out.println("Hello, Fono!");
         
         Exercicio ex = new Exercicio("kiko", "Exercicio de aquecimento, imitando o kiko", "sons/kiko.mp3", 3);
+        System.out.println("\nExercício(s):");
         System.out.println("Nome: "+ex.getNome());
         System.out.println("Descrição: "+ex.getDescricao());
         System.out.println("Som: "+ex.getSom());
@@ -25,25 +26,52 @@ public class App {
         System.out.println("Descrição: "+ex3.getDescricao());
         System.out.println("Som: "+ex3.getSom());
         System.out.println("Tempo Mínimo: "+ex3.getTempoMin());
+
+        Exercicio ex4 = new Exercicio("Repetição de sílabas", "Repetir sílabas simples como “pa-pa”, “ta-ta”, “ka-ka” para melhorar a coordenação motora da fala.", "sons/repeticao.mp3", 3);
+        System.out.println("Nome: "+ex4.getNome());
+        System.out.println("Descrição: "+ex4.getDescricao());
+        System.out.println("Som: "+ex4.getSom());
+        System.out.println("Tempo Mínimo: "+ex4.getTempoMin());
         
-        Paciente p1 = new Paciente();
-        p1.email = "emailaleatorio123@gmail.com";
-        p1.nome = "José";
+        Exercicio ex5 = new Exercicio("Trava-Línguas", "Repetir lentamente um trava-línguas para melhorar a articulação das palavras.", "sons/travalingua.mp3", 5);
+        System.out.println("Nome: "+ex5.getNome());
+        System.out.println("Descrição: "+ex5.getDescricao());
+        System.out.println("Som: "+ex5.getSom());
+        System.out.println("Tempo Mínimo: "+ex5.getTempoMin());
 
-        Paciente p2 = new Paciente();
-        p2.email = "emailaleatorio312@gmail.com";
-        p2.nome = "João";
+        Paciente p1 = new Paciente("José", "emailaleatorio123@gmail.com");
+        System.out.println("\nPaciente(s):");
+        System.out.println("Nome: "+p1.getNome()+"\nEmail: "+p1.getEmail());
+        Paciente p2 = new Paciente("João", "emailaleatorio312@gmail.com");
+        System.out.println("Nome: "+p2.getNome()+"\nEmail: "+p2.getEmail());
+        Paciente p3 = new Paciente("Maria", "emailaleatorio321@gmail.com");
+        System.out.println("Nome: "+p3.getNome()+"\nEmail: "+p3.getEmail());
+        Paciente p4 = new Paciente("Josefa", "emailaleatorio341@gmail.com");
+        System.out.println("Nome: "+p4.getNome()+"\nEmail: "+p4.getEmail());
+        Paciente p5 = new Paciente("Cremilda", "emailaleatorio451@gmail.com");
+        System.out.println("Nome: "+p5.getNome()+"\nEmail: "+p5.getEmail());
 
-        Paciente p3 = new Paciente();
-        p3.email = "emailaleatorio321@gmail.com";
-        p3.nome = "Maria";
-    
+        Profissional pr1 = new Profissional("Larissa", " (51) 99777-6655");
+        System.out.println("\nProfissional(s):");
+        System.out.println("Nome: "+pr1.getNome()+"\nTelefone: "+pr1.getTelefone());
+        Profissional pr2 = new Profissional("Ronalda", " (31) 96507-0435");
+        System.out.println("Nome: "+pr2.getNome()+"\nTelefone: "+pr2.getTelefone());
+
         Clinica cl1 = new Clinica("FonoVida", "12.345.678/0001-90");
+        System.out.println("\nCliente(s):");
         System.out.println("Nome: "+cl1.getNome());
         System.out.println("CNPJ: "+cl1.getCnpj());
         
         Clinica cl2 = new Clinica("Clínica Voz Ativa", "98.765.432/0001-12");
         System.out.println("Nome: "+cl2.getNome());
         System.out.println("CNPJ: "+cl2.getCnpj());
+
+        Clinica cl3 = new Clinica("Clínica FonoFácil", "45.678.901/0001-33");
+        System.out.println("Nome: "+cl3.getNome());
+        System.out.println("CNPJ: "+cl3.getCnpj());
+
+        Clinica cl4 = new Clinica("Centro de Fonoaudiologia Express", "67.890.123/0001-77");
+        System.out.println("Nome: "+cl4.getNome());
+        System.out.println("CNPJ: "+cl4.getCnpj());
     }
 }
